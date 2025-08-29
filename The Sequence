@@ -1,0 +1,17 @@
+The Sequence
+Difficulty: BasicAccuracy: 86.03%Submissions: 13K+Points: 1Average Time: 15m
+You are given a number n. You need to recursively find the nth term of the series S that is given by:
+S(n) = n+ n*(S(n-1)) and S(0) = 1
+
+Example 1:
+
+
+
+
+#User function Template for python3
+
+def theSequence(n):
+    #code here
+    if n == 0:
+        return 1
+    return n+n*(theSequence(n-1))
